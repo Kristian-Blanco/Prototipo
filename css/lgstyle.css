@@ -31,30 +31,30 @@ body{
 }
 .formulario .inputs{
     padding: 0 40px;
-    box-sizing: border-box;
+    font-weight: bold;
 }
+
 .inputs .username{
     position: relative;
     border-bottom: 2px solid rgba(27, 2, 2, 0.315);
-    margin: 30px 0;
+    margin: 20px 0;
+    font-weight: bold;
 }
+
 .username input{
-    width: 100%;
+    width: 85%;
     padding: 0 5px;
-    height: 40px;
     font-size: 16px;
     border: none;
     background: none;
     outline: none;
+
 }
 .username label{
-    position: absolute;
-    top: 50%;
-    left: 5px;
+    top:-15px;
     color: rgb(0, 0, 0);
-    transform: translateY(-50%);
-    font-size: 16px;
-    pointer-events: none;
+    position: absolute;
+    font-weight: bold;
 }
 
 .username span::before{
@@ -63,16 +63,27 @@ body{
     top: 40px;
     left: 0;
     width: 100%;
-    height: 2px;
     background: gray;
     transition: .5s;
+
 }
 
-.username input:focus ~ label,
-.username input:focus ~ label{
-    top:-5px;
-    color: gray;
+::placeholder{
+    font-family: 'Times New Roman', Times, serif;
 }
+
+.fa{
+    margin-right: -1px;
+}
+
+.ojos{
+    position: absolute;
+}
+
+#vista1{
+    display: none;
+}
+
 .username input:focus ~ span::before,
 .username input:focus ~ span::before{
     width: 100%;
@@ -83,6 +94,15 @@ body{
     color: rgb(240, 41, 41);
     cursor: pointer;
     margin: 0px 0 20px 0;
+    text-decoration: underline;
+  
+}
+
+.mensaje{
+    text-align: center;
+    color: rgb(240, 41, 41);
+    cursor: pointer;
+    margin: 0px 10px 20px 10px;
 }
 
 input[type="submit"]{

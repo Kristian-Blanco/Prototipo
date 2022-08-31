@@ -1,0 +1,32 @@
+
+.descripcion{
+
+  font-family: roboto;
+  font-size: 25px;
+  align-items: center;
+  margin: 14px;
+  position: static;
+  font-weight: bold;
+  padding:4px;
+}
+
+.check{
+  width: 0.8cm;
+  height: 0.8cm;
+  align-items: center;
+  margin: 0.5cm;
+
+}
+
+.fa{
+  margin-right: -1px;
+}
+
+/*.ojos{
+  position: absolute;
+ 
+}*/
+
+#vista1 , #vista3, #vista5{
+  display: none;
+}
