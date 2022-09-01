@@ -2,12 +2,12 @@
 .descripcion{
 
   font-family: roboto;
-  font-size: 25px;
-  align-items: center;
-  margin: 14px;
-  position: static;
+  font-size: 15px;
+  margin-left: 50px;
+  margin: 4px;
+  position: sticky;
   font-weight: bold;
-  padding:4px;
+  padding:2px;
 }
 
 .check{

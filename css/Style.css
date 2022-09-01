@@ -5,6 +5,6 @@ body{
     display: flex;
     flex-direction: column;
     height: 240vh;
-    background: linear-gradient(45deg, #dcdcdc 0%, #dcdcdc 100%);
+    background: linear-gradient(45deg, #ffffff 0%, #ffffff 100%);
     background-position: cover;
 }
