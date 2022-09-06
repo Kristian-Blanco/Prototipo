@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.101.0">
-    <title>Preguntas secretas</title>
+    <title>Preguntas Secretas</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <link rel="stylesheet" href="../css/Style.css">
@@ -17,124 +17,95 @@
     <script src="../js/Master.js"></script>
     <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/sidebars/">
     
-    <!-- Custom styles for this template -->
-    <link href="../css/sidebars.css" rel="stylesheet">
-	<link href="../css/form-validation.css" rel="stylesheet">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <link href="../css/perfil.css" rel="stylesheet">
-</head> 
-
-<body>
-    <div class="flex-shrink-0 p-3 bg-white" id="Cabecera" ></div>
-
-    <main class="d-flex flex-nowrap">
-
-        <div class="flex-shrink-0 p-3 bg-white" style="width: 280px;" id="Menu"></div>
-        <div class="b-example-divider b-example-vr"></div>  
-        <div style="width: 150px;"></div> 	
-
-        <div class="descripcion">
-            <div class="descripcion">
-                
-                <h1>Preguntas secretas</h1>
-    
-                <table class="descripcion" >
-
-                <tr>
-                    <td >Pregunta #1:</td>
-                    <td ><input class="descripcion" type="text" disabled=""></td>
-                    <td><input class="check" type="checkbox" padding="50px"></td>
-                </tr>
-
-                <tr>
-                    <td class="descripcion"> Respuesta 1:</td>
-                    <td><input class="descripcion" type="fila" type="text" disabled=""></td>
-                    <td><input class="check" type="checkbox" ></td>
-                </tr>
-
-                <tr>
-                    <td class="descripcion">Pregunta #2:</td>
-                    <td><input  class="descripcion" type="text" disabled=""></td>
-                    <td><input class="check" type="checkbox" ></td>
-                </tr>
-
-                <tr>
-                    <td>Respuesta 2:</td>
-                    <td><input class="descripcion" type="text" disabled=""></td>
-                    <td><input class="check" type="checkbox" ></td>
-                </tr>
-
-                <tr>
-                    <td >Pregunta #3:</td>
-                    <td><input  class="descripcion" type="text" disabled=""></td>
-                    <td><input class="check" type="checkbox" ></td>
-                </tr>
-
-                <tr>
-                    <td>Respuesta 3:</td>
-                    <td><input class="descripcion" type="text" disabled=""></td>
-                    <td><input class="check" type="checkbox"></td>
-                </tr>
-            </table>
-        </div>
-
+<!-- Pop Up Script -->
+<script>
+    $(document).ready(function(){
+      $('.click').click(function(){
+        $('.popup_box').css("display", "block");
+      });
+      $('.btn1').click(function(){
+        $('.popup_box').css("display", "none");
+      });
+      $('.btn2').click(function(){
+        $('.popup_box').css("display", "none");
+        alert("Registro Borrado Permanentemente.");
+      });
+    });
+  </script>
+  
+  
+      <!-- Custom styles for this template -->
+      <link href="../css/sidebars.css" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    </head>
+  
+    <body>
+  <div class="flex-shrink-0 p-3 bg-white" id="Cabecera">
           
-
-            <a href="../forms/1.1 Preguntas_Nuev.html"
-            <button type="button" class="btn btn-success">Crear</button>
-            </a>
-                    
-            <a href="../forms/1.2 Preguntas_Edit.html"
-            <button id="editar" type="button" class="btn btn-warning">Editar</button>            
-            </a>
-            
-            <a href="#" class="click"><button type="button" class="btn btn-danger">Eliminar</button></a>
-            <ul id="lista" class="list-group"></ul>
-
-            <script>
-                var editar = document.getElementById('editar');
-                var lista = document.getElementById('lista');
-                var checks = document.querySelectorAll('.check');
-    
-    
-                editar.addEventListener('click',function(){
-                    lista.innerHTML='';
-                    checks.forEach((e)=>{
-                        if (e.checked==true){
-                            var elemento= document.createElement('li');
-                            elemento.className='list-group-item';
-                            elemento.innerHTML=e.value;
-                            lista.appendChild(elemento);
-                        }
-                      });
-                });
-            </script>
-
-
-    <!--Eliminar-->
-    <div class="popup_box">
-    <i class="fas fa-exclamation"></i>
-    <h1>El registro que has seleccionado será eliminado</h1>
-    <label>¿Confirmar?</label>
-    <div class="btns">
-        <a href="#" class="btn1">Cancelar</a>
-        <a href="#" class="btn2">Eliminar</a>
-    </div>
-    </div>
+  </div>
+  <main class="d-flex flex-nowrap">
+       <div class="flex-shrink-0 p-3 bg-white" style="width: 280px;" id="Menu">
+          
+      </div>
+      <div class="b-example-divider b-example-vr"></div>
+          <div class="container">
+          <div class="consulta">
+            <div class="row">
+              <div class="col-6">
+                  <h3>Mis Pregunta Secretas</h3>
+              </div>
+          
+          </div>
+          </div>
+          <div class="box-body">
+              <div class="table table-reponsive">
+                  <table class="table table-hover">
+                      <thead>
+                          <tr>
+                              <th>Seleccionar</th>
+                              <th>Pregunta</th>
+                              <th>Respuesta</th>
+                            <tr>
+                                <th>
+                                  <input type="checkbox" id="cbox1" value="checkbox">
+                                </th>
+                            <td> Color favorito? </td>
+                            <td> Verde </td>
+                          </tr>
+                      
+                      </thead>
+                </table>
+  
+                <a href="..\forms\1.1 Preguntas_Nuev.html"
+                <button type="button" class="btn btn-success">Crear</button>
+                </a>
+                <a href="..\forms\1.2 Preguntas_Edit.html"
+                <button type="button" class="btn btn-warning">Editar</button>
+                </a>
+                <a href="#" class="click"><button type="button" class="btn btn-danger">Eliminar</button></a>
+              <div class="popup_box">
+              <i class="fas fa-exclamation"></i>
+              <h1>El registro que has seleccionado será eliminado</h1>
+              <label>¿Confirmar?</label>
+                <div class="btns">
+                  <a href="#" class="btn1">Cancelar</a>
+                  <a href="#" class="btn2">Eliminar</a>
+                </div>
+              </div>
             </div>
-        </div>
-    
-</div>
-<div id="Pie">
+          </div>    
+      </div>
+  
+  
+      </div>
+      
 
-</div>
-            
-        </div>
-    </div>
-</div>
-
+        
 
 </main>
-
+<script src="../js/sidebars.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
