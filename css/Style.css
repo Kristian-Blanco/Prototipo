@@ -8,3 +8,12 @@ body{
     background: linear-gradient(45deg, #ffffff 0%, #ffffff 100%);
     background-position: cover;
 }
+
+.derecha{
+    text-align:right;
+}
+
+#margen2{
+    margin-top: 30px;
+}
+
