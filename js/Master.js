@@ -35,9 +35,9 @@ function AgregarMenu(){
       '<div class="collapse" id="miperfil-collapse">'+
         '<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">'+
           '<li><a href="../forms/1. MI PERFIL_Preguntas.html" class="link-dark d-inline-flex text-decoration-none rounded">Mis Preguntas</a></li>'+
-    '<li><a href="../forms/1.4 Cambio_Contra.html" class="link-dark d-inline-flex text-decoration-none rounded">Cambio de Contraseña</a></li>'+
-    '<li><a href="../forms/1.5 Editar usuario.html" class="link-dark d-inline-flex text-decoration-none rounded">Editar Usuario</a></li>'+
-          '<li><a href="../forms/1.6 Cerrar sesion.html" class="link-dark d-inline-flex text-decoration-none rounded">Cerrar Sesión</a></li>'+   
+          '<li><a href="../forms/1.4 Cambio_Contra.html" class="link-dark d-inline-flex text-decoration-none rounded">Cambio de Contraseña</a></li>'+
+          '<li><a href="../forms/1.5 Editar usuario.html" class="link-dark d-inline-flex text-decoration-none rounded">Editar Usuario</a></li>'+
+          '<li><a href="../forms/0. Login.html" class="link-dark d-inline-flex text-decoration-none rounded">Cerrar Sesión</a></li>'+
     '</ul>'+
       '</div>'+
     '</li>'+
