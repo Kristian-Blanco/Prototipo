@@ -24,14 +24,15 @@ function AgregarMenu(){
      '<div class="collapse show" id="ccollapse"><a href="../forms/main.html" class="link-dark d-inline-flex text-decoration-none rounded">INICIO</a></div>'+
      '<div class="border-top my-3"></div>'+
     
-  '<ul class="list-unstyled ps-0">'+
+      '<ul class="list-unstyled ps-0">'+
   
     '<li class="mb-1">'+
     //MENÚ DE MI PERFIL
-      '<button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">'+
+    '<button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#miperfil-collapse" aria-expanded="false">'+
         'MI PERFIL'+
       '</button>'+
-      '<div class="collapse show" id="home-collapse">'+
+      //Parte desplegable (Collapse show)
+      '<div class="collapse" id="miperfil-collapse">'+
         '<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">'+
           '<li><a href="../forms/1. MI PERFIL_Preguntas.html" class="link-dark d-inline-flex text-decoration-none rounded">Mis Preguntas</a></li>'+
     '<li><a href="../forms/1.4 Cambio_Contra.html" class="link-dark d-inline-flex text-decoration-none rounded">Cambio de Contraseña</a></li>'+
@@ -43,10 +44,10 @@ function AgregarMenu(){
 
     //MENÚ DE CONTABILIDAD
     '<li class="mb-1">'+
-      '<button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">'+
+      '<button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#conta-collapse" aria-expanded="false">'+
         'CONTABILIDAD'+
       '</button>'+
-      '<div class="collapse show" id="dashboard-collapse">'+
+      '<div class="collapse" id="conta-collapse">'+
         '<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">'+
           '<li><a href="../forms/2. CONTABILIDAD_categoria.html" class="link-dark d-inline-flex text-decoration-none rounded">Categoría Contable</a></li>'+
           '<li><a href="../forms/3. CONTABILIDAD_catalogo.html" class="link-dark d-inline-flex text-decoration-none rounded">Catálogo de Cuentas</a></li>'+
@@ -61,10 +62,10 @@ function AgregarMenu(){
 
     //MENÚ DE REPORTES
     '<li class="mb-1">'+
-      '<button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">'+
+      '<button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#reporte-collapse" aria-expanded="false">'+
         'REPORTES'+
       '</button>'+
-      '<div class="collapse show" id="orders-collapse">'+
+      '<div class="collapse" id="reporte-collapse">'+
         '<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">'+
           '<li><a href="../forms/9. REPORTE_Balance General.html" class="link-dark d-inline-flex text-decoration-none rounded">Balance General</a></li>'+
           '<li><a href="../forms/10. REPORTE_Estado Resultado.html" class="link-dark d-inline-flex text-decoration-none rounded">Estado de Resultado</a></li>'+
@@ -75,10 +76,10 @@ function AgregarMenu(){
     
     //MENÚ DE SEGURIDAD
     '<li class="mb-1">'+
-      '<button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">'+
+      '<button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#seguridad-collapse" aria-expanded="false">'+
         'SEGURIDAD'+
       '</button>'+
-      '<div class="collapse show" id="account-collapse">'+
+      '<div class="collapse" id="seguridad-collapse">'+
         '<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">'+
           '<li><a href="../forms/13. SEGURIDAD_usuario.html" class="link-dark d-inline-flex text-decoration-none rounded">Usuario</a></li>'+
           '<li><a href="../forms/12. SEGURIDAD_gestión usuario.html" class="link-dark d-inline-flex text-decoration-none rounded">Gestión de Usuario</a></li>'+
@@ -117,13 +118,13 @@ function PupUp(){
 function AgregarHeader(){
   var menu = document.getElementById("Cabecera");
     menu.innerHTML = '<header>'+
-    '<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #e43e3e ;">'+
+    '<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #a80000">'+
         '<div class="container-fluid">'+
           '<a class="navbar-brand" href="#">'+
-            '<img src="../images/burridogs_logo.png" alt="" width="130" height="70" class="d-inline-block align-text-mid">'+
-            'Burridogs'+
+            '<img src="../images/burridogs_logo.png" class="rounded" alt="" width="120" height="70" class="d-inline-block align-text-mid">'+
+            '   PIERDA LA PENA, ENTRELE SIN MIEDO'+
           '</a>'+
-            '<span class="navbar-toggler-icon"></span>'+
+          //'<span class="navbar-toggler-icon"></span>'+
           '</button>'+
           '<div class="collapse navbar-collapse" id="navbarSupportedContent">'+
             '<ul class="navbar-nav mr-auto">'+

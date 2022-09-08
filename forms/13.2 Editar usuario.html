@@ -38,10 +38,9 @@
             <div class="descripcion">
                 
                 <h3>Usuario - Editar Registro</h3>
-    
+                <div id="margen2"></div>
                 <table class="descripcion" >
-
-                <tr>
+                  <tr>
                     <td class="descripcion">Id Usuario:</td>
                     <td ><input class="descripcion" type="text" disabled=""></td> 
                 </tr>
@@ -52,8 +51,22 @@
                 </tr>
 
                 <tr>
-                  <td class="descripcion">Estado Usuario:</td>
-                  <td><input class="descripcion" type="fila" type="text"></td> 
+                  <td>Estado Usuario:</td>
+                  <td>
+                       <!--SELECCIONAR ESTADO-->
+                       <div class="descripcion1">
+                          <select class="form-select" id="country" required>
+                              <option value="">Seleccionar Estado</option>
+                              <option>Bloqueado</option>
+                              <option>Activo</option>
+                              <option>Inactivo</option>
+                              <option>Nuevo</option>
+                          </select>
+                          <div class="invalid-feedback">
+                              Please select a valid country.
+                          </div>
+                      </div>
+                  </td>
                 </tr>
 
                 <tr>
@@ -63,7 +76,7 @@
 
                 <tr>
                   <td class="descripcion"> Contraseña:</td>
-                  <td ><input class="descripcion" type="text" disabled=""></td> 
+                  <td ><input class="descripcion" type="password" disabled=""></td> 
                 </tr>
 
                 <tr>
@@ -73,17 +86,17 @@
 
                 <tr>
                   <td class="descripcion"> Fecha de Última Conexión:</td>
-                  <td><input class="descripcion" type="fila" type="text"></td> 
+                  <td><input class="descripcion2"  type="date"></td> 
                 </tr>
 
                 <tr>
                   <td class="descripcion"> Primer Ingreso:</td>
-                  <td><input class="descripcion" type="fila" type="text"></td> 
+                  <td><input class="descripcion2" type="date"></td> 
                 </tr>
 
                 <tr>
                   <td class="descripcion"> Fecha de Vencimiento:</td>
-                  <td><input class="descripcion" type="fila" type="text"></td> 
+                  <td><input class="descripcion2" type="date"></td> 
                 </tr>
 
                 <tr>
@@ -103,7 +116,7 @@
 
                 <tr>
                   <td class="descripcion"> Fecha de Creación:</td>
-                  <td><input class="descripcion" type="fila" type="text"></td> 
+                  <td><input class="descripcion2" type="date"></td> 
                 </tr>
 
                 <tr>
@@ -113,18 +126,21 @@
 
                 <tr>
                   <td class="descripcion"> Fecha de Modificación:</td>
-                  <td><input class="descripcion" type="fila" type="text"></td> 
+                  <td><input class="descripcion2" type="date"></td> 
                 </tr>
-
+                
             </table>
-             <!--Falta referencia del boton-->
-            <a href=" "
-            <button type="button" class="btn btn-success">Guardar</button>
-            </a>
 
-            <a href="..\forms\13. SEGURIDAD_usuario.html"
-            <button type="button" class="btn btn-danger">Cancelar</button>
-            </a>
+                <div id="margen2" class="derecha">
+                <!--Falta referencia del boton-->
+                <a href=" "
+                <button type="button" class="btn btn-success">Guardar</button>
+                </a>
+
+                <a href="..\forms\13. SEGURIDAD_usuario.html"
+                <button type="button" class="btn btn-danger">Cancelar</button>
+                </a>
+              </div>
         </div>  
         </div>
     </div>   

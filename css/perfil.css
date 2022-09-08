@@ -6,7 +6,6 @@
   margin-left: 50px;
   margin: 4px;
   position: sticky;
-  
   padding:2px;
 }
 
@@ -24,7 +23,17 @@
   margin: 2px;
   position: static;
   font-weight: bold;
-  padding:4px;
+  padding:3px;
+}
+
+.descripcion2{
+  
+  align-items: center;
+  margin: 3px;
+  position: static;
+  padding:-1px;
+  width: 5.1cm;
+  height: 0.85cm;
 }
 
 .radio{
